@@ -55,6 +55,8 @@ def escalier(taille,nb):  # ici exemple d' incrémentation où la taille de la m
 
 # escalier(50,10)
 
+
+
 '''
 def dessiner_carre(pixels):
     t.forward(pixels)
@@ -74,8 +76,17 @@ def dessiner_carre(taille_pixels):
         t.forward(taille_pixels)
         t.left(90)
 
-dessiner_carre(300)
+#dessiner_carre(300)
 
+def carres(taille_depart,nb): # ici fonction qui dessine des carrés de plus en plus grand (suivant l'index i sur une boucle for)
+    for i in range(0,nb):
+        taille_pixels = (i+1) * taille_depart
+        dessiner_carre(taille_pixels)
+
+carres(10,10)
+
+    # ici pour l exo on calcule la taille en fonction de l index de la boucle donc :
+    # taille = i* taille_depart
 
 
 
