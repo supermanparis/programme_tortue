@@ -83,11 +83,18 @@ def carres(taille_depart,nb): # ici fonction qui dessine des carrés de plus en 
         taille_pixels = (i+1) * taille_depart
         dessiner_carre(taille_pixels)
 
-carres(10,10)
+carres(3,10)
 
     # ici pour l exo on calcule la taille en fonction de l index de la boucle donc :
     # taille = i* taille_depart
 
+
+def carres(taille_depart,nb): # ici fonction qui dessine des carrés de plus en plus grand (suivant l'index i sur une boucle for)
+    for i in range(0,nb):
+        taille_pixels = ((i+1) * (i+1)) * taille_depart # (i+1) au carré pour accélérer la variation de l'augmentation de la dimension
+        dessiner_carre(taille_pixels)
+
+# carres(3,10)
 
 
 # fin code pour deplacer la tortue
